@@ -1,0 +1,117 @@
+body {
+  color: white;
+  background: rosybrown;
+}
+.wrapper {
+  margin: 0px;
+  padding: 3rem;
+}
+.container {
+  margin-top: 3rem;
+}
+.heading > a {
+  align-items: right;
+  justify-content: space-around;
+  text-decoration: none;
+  background: rosybrown;
+  padding: 3px;
+  border-radius: 3px;
+}
+.heading > div:nth-child(3) {
+  justify-content: space-between;
+  gap: 3rem;
+  border: 1px solid white;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid 1px white;
+}
+/* .try {
+  /* background: white; */
+/* height: auto; */
+/* width: 100%; */
+/* justify-content: center; */
+/* align-items: center; */
+/* padding: 4px; */
+/* align-self: center; */
+/* } */
+.section button:hover {
+  background: blue;
+  transform: scale(1.5);
+  transition: smooth;
+}
+
+.section > div:nth-child(2) {
+  display: none;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  max-width: 40rem;
+  margin: auto;
+  background: black;
+}
+.form-container label {
+  text-align: left;
+  padding-right: 10px;
+}
+.form-container input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#Add-Task {
+  background: Blue;
+  color: white;
+}
+.form-check input[type="text"],
+.form-check input[type="number"] {
+  width: auto;
+  height: 2rem;
+}
+
+/*** Bottom tables ***/
+.section-2 {
+  padding: 30px;
+  margin-top: 4rem;
+  background: rosybrown;
+}
+.gride {
+  justify-content: center;
+  align-items: center;
+  /* width: 50%; */
+  /* padding: 2 5 2 5; */
+}
+#G1 tr {
+  margin-bottom: 2rem;
+}
+#G1 tr td {
+  /* gap: 3rem; */
+  padding: 10px;
+
+  background: green;
+}
+#B1 tr td {
+  /* width: 100%; */
+  /* gap: 3rem; */
+  padding: 10px;
+  background: rgb(231, 83, 83);
+  /* border: solid 1px white; */
+  /* border-radius: 30px; */
+}
+/* .section-2 table-1 {
+  justify-content: center;
+  align-items: center;
+} */
+/* =========Footer=======*/
+footer {
+  background: black;
+  height: 6rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}

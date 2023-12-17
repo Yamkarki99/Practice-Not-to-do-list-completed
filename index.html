@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not To Do List</title>
+    <!----Bootstrap Cdn-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--Fontawesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="heading row mt-auto text-center fs-2">
+          <div>
+            <h1>Not To Do List</h1>
+          </div>
+          
+          <hr />
+          <div class="bg-dark">
+            <a href="contact" clas="flex">Who is this?</a>
+          <p id="who" > Submit form and look Here!!</p>
+          
+          </div>
+
+          
+        </header>
+        <div class="section ps-2 mt-5  py-3">
+            <button onclick="toggleForm()">Form</button>
+            <div class="border">
+              <form class="form-check text-lg-end mt-5 border p-3 py-5 rounded shadow-lg form-container" action="javascript:void(0)" onSubmit="handOver(this)" id="form-1">
+                <h2 class="bg-danger fa-text-width border-bottom text-lg-start"  >
+                  Info
+                </h2>
+                <hr />
+    
+                <label for="firstName">First-Name</label>
+                <input type="text" value="fname" id="firstName"required/>
+                <br />
+                <label for="lastName">Last-Name</label>
+                <input type="text " value="lname" id="lastName" required />
+                <br />
+                <label for="phone-number" pattern="[0,9]{+61}">Phone Number:</label>
+                <input type="number" id="phone-number" />
+                <br />
+                <label for="link">Link:</label>
+                <input type="link" value="https://.+" pattern="https://.+" id="link"/> <Br>
+                </Br> <input type="submit" value="submit"/>
+        
+              </form>
+            </div>
+          </div>
+
+          <hr />
+        
+
+          <form onsubmit="handleOnSubmit(event)" action="javascript:void(0)"
+            class="form-check shadow-lg text-md-center mt-5 border p-3 py-5 rounded shadow-lg bg-rosybrown form-container" id="form-2">
+            <h3>Enter Task</h3>
+            <hr>
+            <input type="text"  class="text-center" name="text" required placeholder="Task"/>
+            <input type="number" class="text-center" placeholder="Hours" name="number" required/>
+            <button type="submit" id="Add-Task">Add Task</button>
+          </form>
+          <!--Bottom tables-->
+          <div class="section-2 flex">
+            <div class="gride ">
+             <h3 class="text-center bg-success">Entry Task list</h3>
+             <hr>
+             <table class="table-1 good">
+              <tbody id="G1"></tbody>
+             </table>
+            </div>
+            <div class="gride">
+              <h3 class="text-center bg-danger">Bad Task list</h3>
+              <hr>
+              <table class="table-1 Bad">
+               <tbody id="B1"></tbody>
+
+              </table>
+              <P> you could have saved <span id="badHrs">0</span></P>
+              <p >
+                <button id="deleteAllBad">
+                  <i class="fa-trash fa-solid"></i>
+                </button>
+               
+              </p>
+             </div>
+           
+
+          </div>
+          <div class="space">
+            <div>Total Hours allowed = <span id="total">24</span>/168 hr</div>
+
+          </div>
+        
+      </div>
+    </div>
+    <footer>
+      <div>Developed by me with love</div>
+      <div>&&copy;copyright protected by federal law
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
